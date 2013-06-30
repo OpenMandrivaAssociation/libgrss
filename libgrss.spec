@@ -31,7 +31,7 @@ LibGRSS is a library for easy management of RSS/Atom/Pie feeds.
 %package -n %{devname}
 Summary:        Library for easy management of RSS/Atom/Pie feeds -- Development Files
 Group:          Development/C
-Requires:       %{libname} = %{version}-%{version}
+Requires:       %{libname} = %{version}-%{release}
 
 %description -n %{devname}
 LibGRSS is a library for easy management of RSS/Atom/Pie feeds.
