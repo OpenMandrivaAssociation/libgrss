@@ -7,10 +7,11 @@ Summary:	Library for easy management of RSS/Atom/Pie feeds
 Name:		libgrss
 Version:	0.5.0
 Release:	1
-Url:		http://live.gnome.org/Libgrss
 License:	LGPLv3+
 Group:          System/Libraries
+Url:		http://live.gnome.org/Libgrss
 Source0:	http://gtk.mplat.es/libgrss/tarballs/%{name}-%{version}.tar.gz
+Patch0:		libgrss-missing-includes.patch
 
 BuildRequires:  pkgconfig(gnome-doc-utils)
 BuildRequires:  pkgconfig(gobject-2.0) >= 2.30.2
@@ -37,6 +38,7 @@ LibGRSS is a library for easy management of RSS/Atom/Pie feeds.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 %configure2_5x \
