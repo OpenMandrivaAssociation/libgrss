@@ -6,7 +6,7 @@
 Summary:	Library for easy management of RSS/Atom/Pie feeds
 Name:		libgrss
 Version:	0.5.0
-Release:	9
+Release:	10
 License:	LGPLv3+
 Group:          System/Libraries
 Url:		http://live.gnome.org/Libgrss
