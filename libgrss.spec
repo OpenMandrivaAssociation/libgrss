@@ -2,6 +2,7 @@
 %define major	0
 %define libname	%mklibname grss %{api} %{major}
 %define	devname	%mklibname grss	-d
+%define _disable_rebuild_configure 1
 
 Summary:	Library for easy management of RSS/Atom/Pie feeds
 Name:		libgrss
