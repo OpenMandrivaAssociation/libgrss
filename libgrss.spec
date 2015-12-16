@@ -1,18 +1,17 @@
 %define	api	1.0
 %define major	0
-%define libname	%mklibname grss %{api} %{major}
+%define libname	%mklibname grss %{major}
 %define	devname	%mklibname grss	-d
 %define _disable_rebuild_configure 1
 
 Summary:	Library for easy management of RSS/Atom/Pie feeds
 Name:		libgrss
-Version:	0.5.0
-Release:	12
+Version:	0.7.0
+Release:	1
 License:	LGPLv3+
 Group:          System/Libraries
 Url:		http://live.gnome.org/Libgrss
-Source0:	https://git.gnome.org/browse/libgrss/snapshot/%{name}-%{version}.tar.gz
-Patch0:		libgrss-missing-includes.patch
+Source0:	https://download.gnome.org/sources/libgrss/0.7/%{name}-%{version}.tar.xz
 
 BuildRequires:  pkgconfig(gnome-doc-utils)
 BuildRequires:  pkgconfig(gobject-2.0) >= 2.30.2
@@ -51,12 +50,12 @@ LibGRSS is a library for easy management of RSS/Atom/Pie feeds.
 %makeinstall_std
 
 %files -n %{libname}
-%{_libdir}/libgrss-%{api}.so.%{major}*
+%{_libdir}/libgrss.so.%{major}*
 
 %files -n %{devname}
 %doc COPYING NEWS README
 %doc %{_datadir}/gtk-doc/html/libgrss/
 %{_includedir}/libgrss/
-%{_libdir}/libgrss-%{api}.so
-%{_libdir}/pkgconfig/libgrss-0.5.pc
+%{_libdir}/libgrss.so
+%{_libdir}/pkgconfig/libgrss.pc
 
