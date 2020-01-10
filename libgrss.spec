@@ -38,7 +38,7 @@ LibGRSS is a library for easy management of RSS/Atom/Pie feeds.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %configure2_5x \
