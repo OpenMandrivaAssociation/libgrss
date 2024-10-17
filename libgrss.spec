@@ -10,7 +10,7 @@ Version:	0.7.0
 Release:	4
 License:	LGPLv3+
 Group:          System/Libraries
-Url:		http://live.gnome.org/Libgrss
+Url:		https://live.gnome.org/Libgrss
 Source0:	https://download.gnome.org/sources/libgrss/0.7/%{name}-%{version}.tar.xz
 
 BuildRequires:  pkgconfig(gnome-doc-utils)
