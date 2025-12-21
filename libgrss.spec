@@ -13,6 +13,11 @@ Group:          System/Libraries
 Url:		https://live.gnome.org/Libgrss
 Source0:	https://download.gnome.org/sources/libgrss/0.7/%{name}-%{version}.tar.xz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  pkgconfig(gnome-doc-utils)
 BuildRequires:  pkgconfig(gobject-2.0) >= 2.30.2
 BuildRequires:  pkgconfig(libsoup-2.4) >= 2.36.1
